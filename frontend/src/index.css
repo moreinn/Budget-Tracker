@@ -1,0 +1,103 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+
+/* auth */
+.auth-container { display: flex; justify-content: center; align-items: center; height: 100vh; }
+
+.auth-box { background: white; padding: 2rem; border-radius: 8px; width: 360px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+
+.auth-box h2 { margin-bottom: 1.2rem; }
+
+.auth-box input { width: 100%; padding: 0.65rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; }
+
+.auth-box button { width: 100%; padding: 0.7rem; background: #1a56a0; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 15px; }
+
+.auth-box p { margin-top: 1rem; text-align: center; font-size: 14px; }
+
+.auth-box a { color: #1a56a0; }
+
+.error { color: red; margin-bottom: 1rem; font-size: 14px; }
+
+/* dashboard */
+.dashboard { max-width: 800px; margin: 0 auto; padding: 2rem; }
+
+.dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+
+.header-right { display: flex; align-items: center; gap: 1rem; }
+
+.btn-logout { padding: 0.5rem 1rem; background: #e74c3c; color: white; border: none; border-radius: 4px; cursor: pointer; }
+
+/* summary cards */
+.summary-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+
+.card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+
+.card h3 { font-size: 12px; color: #888; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.card p { font-size: 28px; font-weight: bold; }
+
+.card.income p { color: #27ae60; }
+.card.expense p { color: #e74c3c; }
+.card.balance p { color: #1a56a0; }
+
+/* add category */
+.add-category { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+
+.add-category h2 { font-size: 15px; margin-bottom: 0.8rem; color: #444; }
+
+.category-form { display: flex; gap: 0.8rem; }
+
+.category-form input { flex: 1; padding: 0.6rem; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; }
+
+.category-form button { padding: 0.6rem 1.2rem; background: #27ae60; color: white; border: none; border-radius: 4px; cursor: pointer; white-space: nowrap; font-size: 14px; }
+
+.category-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
+
+.category-tag { background: #f0f4ff; color: #1a56a0; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 12px; border: 1px solid #d0dff5; }
+
+/* add transaction */
+.add-transaction { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+
+.add-transaction h2 { font-size: 15px; margin-bottom: 0.8rem; color: #444; }
+
+.transaction-form { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+
+.transaction-form input,
+.transaction-form select { padding: 0.6rem; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; width: 100%; }
+
+.btn-add { grid-column: span 2; padding: 0.7rem; background: #1a56a0; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 15px; }
+
+/* transactions list */
+.transactions-list { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+
+.transactions-list h2 { font-size: 15px; margin-bottom: 1rem; color: #444; }
+
+.transaction-item { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 0; border-bottom: 1px solid #f0f0f0; }
+
+.transaction-item:last-child { border-bottom: none; }
+
+.transaction-info { flex: 1; }
+
+.transaction-desc { font-size: 14px; font-weight: 500; }
+
+.transaction-category { font-size: 12px; color: #999; margin-top: 2px; }
+
+.transaction-right { display: flex; align-items: center; gap: 1rem; }
+
+.transaction-amount { font-weight: bold; font-size: 15px; }
+
+.transaction-item.income .transaction-amount { color: #27ae60; }
+.transaction-item.expense .transaction-amount { color: #e74c3c; }
+
+.btn-delete { padding: 0.3rem 0.7rem; background: #fff; color: #e74c3c; border: 1px solid #e74c3c; border-radius: 4px; cursor: pointer; font-size: 12px; }
+
+.btn-delete:hover { background: #e74c3c; color: white; }
+
+.empty { color: #999; font-size: 14px; padding: 1rem 0; }
+
+.loading { display: flex; justify-content: center; align-items: center; height: 100vh; font-size: 18px; color: #888; }
+
+.chart-container { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+
+.chart-container h2 { font-size: 15px; margin-bottom: 1rem; color: #444; }
